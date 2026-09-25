@@ -1,8 +1,8 @@
 class JevEvidenceKit < Formula
   desc "Offline paired-result checker for local AI workflows"
   homepage "https://github.com/delight0517/jev-evidence-kit"
-  url "https://github.com/delight0517/jev-evidence-kit/releases/download/v0.1.0/jev-evidence-kit-0.1.0.zip"
-  sha256 "ab0d55cb9bfa46fb33b89f91bd354b1bfb77be5e565b9941b20c7190f21ca2cd"
+  url "https://github.com/delight0517/jev-evidence-kit/releases/download/v0.1.1/jev-evidence-kit-0.1.1.zip"
+  sha256 "caeba1e2587e5adc13efcb80104e7455fc4b5079be43b265d700059a7fd8f0f0"
   license "MIT"
 
   depends_on "python@3.12"
@@ -18,6 +18,7 @@ class JevEvidenceKit < Formula
   end
 
   test do
+    assert_match "usage: jev-evidence-kit", shell_output("#{bin}/jev-evidence-kit --help")
     assert_match "self-test: 3 checks passed", shell_output("#{bin}/jev-evidence-kit --self-test")
   end
 end
