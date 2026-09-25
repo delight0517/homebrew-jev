@@ -13,7 +13,7 @@ class JevEvidenceKit < Formula
     libexec.install "#{source}/examples"
     (bin/"jev-evidence-kit").write <<~SH
       #!/bin/bash
-      exec "#{Formula["python@3.12"].opt_libexec}/bin/python3" "#{opt_libexec}/jev_measure.py" "$@"
+      exec "#{formula_opt_libexec("python@3.12")}/bin/python3" "#{opt_libexec}/jev_measure.py" "$@"
     SH
   end
 
