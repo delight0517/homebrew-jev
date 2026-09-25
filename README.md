@@ -5,6 +5,7 @@ Install the free, MIT-licensed offline paired-result checker on macOS:
 ```sh
 brew tap delight0517/jev
 brew install jev-evidence-kit
+jev-evidence-kit --help
 jev-evidence-kit "$(brew --prefix jev-evidence-kit)/libexec/examples/passing_pair.json"
 ```
 
@@ -14,4 +15,4 @@ This tool checks exact answers against an expected answer. It does not call or r
 
 - Source: https://github.com/delight0517/jev-evidence-kit
 - Browser demo: https://delight0517.github.io/jev-evidence-kit/
-- Release ZIP: https://github.com/delight0517/jev-evidence-kit/releases/tag/v0.1.0
+- Release ZIP: https://github.com/delight0517/jev-evidence-kit/releases/tag/v0.1.1
